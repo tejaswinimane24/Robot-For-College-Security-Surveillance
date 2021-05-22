@@ -6,7 +6,7 @@ import Adafruit_DHT
 sensor = Adafruit_DHT.DHT11
 pin = 4
 
-firebase = firebase.FirebaseApplication('https://security-33447-default-rtdb.asia-southeast1.firebasedatabase.app/', None)
+firebase = firebase.FirebaseApplication('https://security-33447-default-rtdb.asia-southeast1.firebasedatabase.app/', None) #replace 
 firebase.put("/", "/temp", "0.00")
 firebase.put("/", "/humidity", "0.00")
 
